@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D Chemistry, University of Utah, 2029 (expected)
+* Ph.D. Chemistry, University of Utah, Present
 * M.Sc. Organic Chemistry, University of Mumbai, 2022
 * B.Sc. Chemistry, University of Mumbai, 2020
 
