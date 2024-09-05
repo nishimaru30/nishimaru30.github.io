@@ -11,54 +11,26 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D Chemistry, University of Utah, 2029 (expected)
+* M.Sc. Organic Chemistry, University of Mumbai, 2022
+* B.Sc. Chemistry, University of Mumbai, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Graduate Teaching Assistant,  University of Utah 
+  * _Aug 2024 - Present_
+    
+* Jr. Scientist I, Aganitha Cognitive Solutions
+  * _Aug 2022 - June 2024_
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer Research Fellow, University of Hyderabad
+  * _May 2021 - June 2021_
+  * Supervisor: Professor Susanta Mahapatra
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Technical: Python, Git, Docker, Linux, Bash, Cloud, Machine Learning
+* Data Analytics and Visualizations: Matplotlib, Seaborn, Numpy, Pandas, Plotly, Altair
+* Cheminformatics/Drug Design: RDKit, OpenBabel, AutoDock, AmberTools, Biopython
+* Computational Chemistry packages: ORCA, NWchem, xTB, Gaussian 09
+* Visualizations Softwares: Avogadro, Chemdraw, Chimera, Gaussview, PyMol, Vesta, VMD
