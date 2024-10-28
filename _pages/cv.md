@@ -35,4 +35,4 @@ Skills
 * Computational Chemistry packages: ORCA, NWchem, xTB, Gaussian 09
 * Visualizations Softwares: Avogadro, Chemdraw, Chimera, Gaussview, PyMol, Vesta, VMD
 
-_Detailed CV<https://drive.google.com/drive/folders/1Uv_jYVeKKiqxFeS-K5PhrWeSqSVc4ZU0>_
+_[Detailed CV](https://drive.google.com/drive/folders/1Uv_jYVeKKiqxFeS-K5PhrWeSqSVc4ZU0)_
