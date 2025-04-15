@@ -7,15 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-👩🏻‍💻 I'm a first year graduate student at the Department of Chemistry, University of Utah. 
+👩🏻‍🔬 I'm an incoming Marie Skłodowska-Curie Doctoral Fellow in the CATALOOP network, where I’ll be exploring the intersection of digital chemistry, chemical automation, and data-driven discovery.
 
-🧠 My research interests lie in digital chemistry, developing and utilizing predictive models for chemical phenomena, chemical automation and analyzing large datasets to uncover new insights.
+🧠 My research interests lie in developing predictive models for chemical phenomena, automating workflows in computational chemistry, and analyzing large datasets to uncover new insights.
 
-💡 My passion for computational chemistry is fueled by my experience at [Aganitha](https://www.aganitha.ai/), where I spent two years as part of the comp chem team. During this time, I wore multiple hats: automating pipelines, creating visualizations, conducting DFT-based reaction mechanism studies, performing molecular docking, analyzing datasets, and predicting the properties of small molecules.
+💡 My passion for computational chemistry was shaped by my two years at Aganitha, where I was part of the comp chem team. I worked across projects involving pipeline automation, data visualization, DFT-based reaction mechanism studies, molecular docking, and property prediction for small molecules.
 
-🌟 When I'm not immersed in debugging errors, you'll find me hiking, going on nature walks, editing photographs, painting, reading fiction, binge-watching TV shows, listening to pop and Sufi songs, or learning new languages.
+🌿 When I’m not debugging code or running simulations, I’m probably hiking, editing photos, painting, reading fiction, binge-watching TV shows, listening to pop and Sufi music, or learning a new language.
 
-⚡️ Feel free to reach out if you have any questions about my work or would like to connect!
+⚡ I’m always happy to connect—whether it's about science, tech, or art. Feel free to reach out!
+
 
 
 
