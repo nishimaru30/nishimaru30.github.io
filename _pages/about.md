@@ -1,12 +1,3 @@
----
-permalink: /
-title: "🙋🏻‍♀️ Hello! I'm Nishi"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
-
 👩🏻‍🔬 I'm an incoming Marie Skłodowska-Curie Doctoral Fellow in the CATALOOP network, where I’ll be exploring the intersection of digital chemistry, chemical automation, and data-driven discovery.
 
 🧠 My research interests lie in developing predictive models for chemical phenomena, automating workflows in computational chemistry, and analyzing large datasets to uncover new insights.
