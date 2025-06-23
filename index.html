@@ -1,73 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nishi Maru | Digital Chemist</title>
-
-  <!-- Google Font: IBM Plex Mono (typewriter style) -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <header>
-    <h1>Nishi Maru</h1>
-    <p>Computational Chemist | PhD Researcher | Science Communicator</p>
-  </header>
+  <div id="header"></div>
+  <div id="about"></div>
+  <div id="education"></div>
+  <div id="experience"></div>
+  <div id="skills"></div>
+  <div id="blog"></div>
+  <div id="contact"></div>
+  <div id="footer"></div>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a computational chemist passionate about using data science, machine learning, and automation in drug discovery and catalyst design. Currently, I’m a Marie Curie PhD fellow at the University of Groningen, working on data-driven catalyst modeling.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Featured Projects</h2>
-    <ul>
-      <li>🧪 Fragment-Based Drug Discovery Tools (Python, RDKit)</li>
-      <li>📊 Visual Analytics for HTE Reaction Data (Dash, Plotly)</li>
-      <li>🌿 Natural Product Filtering via QED, SA, NPScore</li>
-    </ul>
-  </section>
-
-  <section id="blog">
-    <h2>Blog</h2>
-    <div class="blog-list">
-      <div class="blog-card">
-        <h3>From Quiet Firing to a European PhD</h3>
-        <p>A personal story of resilience, navigating broken systems, and finding a new path in science.</p>
-        <a href="https://medium.com/your-article-1-link" target="_blank">Read more →</a>
-      </div>
-    
-      <div class="blog-card">
-        <h3>Building a Career in Cheminformatics</h3>
-        <p>How I transitioned from chemistry to data-driven drug discovery and what helped me most.</p>
-        <a href="https://medium.com/your-article-2-link" target="_blank">Read more →</a>
-      </div>
-    
-      <div class="blog-card">
-        <h3>My Year in Review: Science, Struggles, and Growth</h3>
-        <p>A reflection on the highs and lows of 2024 — and why I’m excited for 2025.</p>
-        <a href="https://medium.com/your-article-3-link" target="_blank">Read more →</a>
-      </div>
-    </div>
-    </section>
-
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <div class="contact-links">
-      <a href="mailto:nishimaru@email.com">Email Me</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-      <a href="https://github.com/nishimaru" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Nishi Maru. Built with 💙 and HTML.</p>
-  </footer>
+  <script>
+    const sections = ["header", "about", "education", "experience", "skills", "blog", "contact", "footer"];
+    sections.forEach(section => {
+      fetch(`${section}.html`).then(res => res.text()).then(html => {
+        document.getElementById(section).innerHTML = html;
+      });
+    });
+  </script>
 </body>
 </html>
