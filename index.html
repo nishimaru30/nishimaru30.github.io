@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +8,85 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="header"></div>
-  <div id="about"></div>
-  <div id="education"></div>
-  <div id="experience"></div>
-  <div id="skills"></div>
-  <div id="blog"></div>
-  <div id="contact"></div>
-  <div id="footer"></div>
+  <header>
+    <h1>Nishi Maru</h1>
+    <p>Computational Chemist • PhD Researcher • Science Communicator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <script>
-    const sections = ["header", "about", "education", "experience", "skills", "blog", "contact", "footer"];
-    sections.forEach(section => {
-      fetch(`${section}.html`).then(res => res.text()).then(html => {
-        document.getElementById(section).innerHTML = html;
-      });
-    });
-  </script>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Nishi Maru, a computational chemist with a passion for data-driven science, machine learning, and digital chemistry. With a strong foundation in organic chemistry and cheminformatics, I aim to bridge the gap between experimental chemistry and computational modeling.</p>
+    <p>I’m currently a Marie Skłodowska-Curie PhD fellow at the University of Groningen, working on data-driven catalyst design as part of the CATALOOP doctoral network. Prior to this, I worked at Aganitha Cognitive Solutions on early-stage drug discovery and predictive analytics, and briefly pursued graduate studies at the University of Utah in digital chemistry.</p>
+    <p>Outside of work, I enjoy writing, storytelling, learning new languages, and exploring the intersections of science and creativity.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>PhD in Computational Chemistry</strong>, University of Groningen (2025–2029, expected)<br />Marie Skłodowska-Curie Fellow – Data-driven modeling of homogeneous catalysts</li>
+      <li><strong>Graduate Studies in Digital Chemistry</strong>, University of Utah (2024–2025)<br />Graduate Teaching Assistant (left due to funding)</li>
+      <li><strong>M.Sc. Organic Chemistry</strong>, Ramnarain Ruia College, University of Mumbai (2020–2022), CGPA 9.88</li>
+      <li><strong>B.Sc. Chemistry</strong>, Ramnarain Ruia College, University of Mumbai (2017–2020), CGPA 9.68</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Junior Scientist – 1</strong>, Aganitha Cognitive Solutions, Hyderabad (Aug 2022 – Jun 2024)<br />
+        <ul>
+          <li>Developed predictive analytics tools and ML models for HTE reaction datasets</li>
+          <li>Performed solubility modeling using xTB + SC-DFT derived features</li>
+          <li>Docking studies with AutoDock, DiffDock, and molecular descriptors</li>
+        </ul>
+      </li>
+      <li><strong>Graduate Teaching Assistant</strong>, University of Utah (Aug 2024 – May 2025)</li>
+      <li><strong>Summer Fellow</strong>, University of Hyderabad (May 2021 – Jul 2021)<br />
+        Theoretical organic chemistry modeling with Gaussian 09 and IR/Raman/HOMO-LUMO analysis
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Programming & Tools:</strong> Python, Git, Docker, Linux, Bash, Shell, Jupyter</li>
+      <li><strong>Data Science & ML:</strong> Pandas, Numpy, Scikit-learn, XGBoost, SVM, Plotly, Altair</li>
+      <li><strong>Cheminformatics & Drug Design:</strong> RDKit, OpenBabel, AutoDock, DiffDock, molecular descriptors</li>
+      <li><strong>Computational Chemistry:</strong> Gaussian 09, ORCA, xTB, NWchem, SC-DFT methods</li>
+      <li><strong>Visualization:</strong> Avogadro, GaussView, PyMOL, Chimera, VESTA, Chemdraw</li>
+      <li><strong>Communication & Leadership:</strong> Blogging, scientific writing, event coordination (120+ people)</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog</h2>
+    <ul>
+      <li><a href="https://medium.com/@your-url-1" target="_blank">From Quiet Firing to a European PhD</a></li>
+      <li><a href="https://medium.com/@your-url-2" target="_blank">Building a Career in Cheminformatics</a></li>
+      <li><a href="https://medium.com/@your-url-3" target="_blank">My Year in Review: Science, Struggles, and Growth</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:nishimaru30@gmail.com">Email Me</a>
+      <a href="https://linkedin.com/in/nishimaru30" target="_blank">LinkedIn</a>
+      <a href="https://github.com/nishimaru" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nishi Maru — Built with 💙 and HTML</p>
+  </footer>
 </body>
 </html>
