@@ -59,19 +59,29 @@ ul {
   color: #4a5568;
 }
 
-.contact-links a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #2b6cb0;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
+.contact-icons {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  margin: 1rem 0;
 }
 
-.contact-links a:hover {
-  background-color: #2c5282;
+.contact-icons li {
+  display: inline-block;
+  margin: 0 0.5rem;
 }
+
+.contact-icons a {
+  text-decoration: none;
+  color: #2b6cb0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact-icons a:hover {
+  text-decoration: underline;
+}
+
 
 footer {
   text-align: center;
