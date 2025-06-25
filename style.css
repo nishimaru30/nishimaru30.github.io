@@ -133,9 +133,16 @@ footer {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Dark mode styles */
+/* Sections */
+section {
+  background-color: var(--section-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark theme overrides */
 body.dark {
   --bg-color: #1a202c;
   --text-color: #fefefe;
@@ -143,17 +150,15 @@ body.dark {
   --section-bg: #2d3748;
 }
 
-section {
-  background-color: var(--section-bg);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
+/* Toggle button */
 #theme-toggle {
   position: absolute;
-  top: 1rem;
+  top: 1.2rem;
   right: 1rem;
-  background: transparent;
+  font-size: 1.2rem;
+  background: none;
   border: none;
-  font-size: 1.5rem;
   cursor: pointer;
+  color: var(--text-color);
 }
+
