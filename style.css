@@ -128,6 +128,8 @@ footer {
   --text-color: #1a202c;
   --accent-color: #2b6cb0;
   --section-bg: white;
+  --text-color: #222831; /* Charcoal */
+  --text-color: #ffffff; /* White (for dark mode) */
 }
 
 body {
