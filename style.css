@@ -1,195 +1,179 @@
-/* =====================
-   THEME VARIABLES
-===================== */
-:root {
-  --bg-color: #0a0f1f;
-  --text-color: #e2e8f0;
-  --accent-color: #00f5d4;
-  --accent-color-2: #ff6b6b;
-  --accent-color-3: #f0f600;
-  --section-bg: #111827;
-}
-
-body.light {
-  --bg-color: #ffffff;
-  --text-color: #1a202c;
-  --accent-color: #2b6cb0;
-  --section-bg: #f9f9f9;
-}
-
-/* =====================
-   GLOBAL STYLES
-===================== */
+/* === Global === */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   margin: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.7;
-  transition: all 0.4s ease;
-
-  /* techy grid background */
-  background-image: 
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background: #0a0a0f;
+  color: #e0e0e0;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'IBM Plex Mono', monospace;
-  color: var(--accent-color);
-  text-shadow: 0 0 6px rgba(0, 245, 212, 0.6);
+.dark {
+  background: #fdfdfd;
+  color: #1a1a1a;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: #08f7fe;
+  text-shadow: 0 0 5px #08f7fe, 0 0 10px #08f7fe;
   margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1rem;
-  color: var(--text-color);
+a {
+  color: #ff6ec7;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-/* =====================
-   HEADER
-===================== */
+a:hover {
+  color: #08f7fe;
+  text-shadow: 0 0 5px #08f7fe;
+}
+
+/* === Header === */
 header {
-  background-color: transparent;
-  color: var(--text-color);
   text-align: center;
-  padding: 4rem 1rem 2rem;
-  position: relative;
+  padding: 2rem;
+  border-bottom: 2px solid #08f7fe;
+  background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+  color: white;
 }
 
 header h1 {
   font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
+  font-size: 1rem;
+  opacity: 0.85;
 }
 
-/* Theme toggle button */
+/* Theme Toggle Button */
 #theme-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  margin-top: 1rem;
   background: none;
-  border: 1px solid var(--accent-color);
-  font-size: 1.3rem;
-  color: var(--accent-color);
-  cursor: pointer;
+  border: 2px solid #08f7fe;
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;
-  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  color: #08f7fe;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 #theme-toggle:hover {
-  background: var(--accent-color);
-  color: #000;
-  box-shadow: 0 0 10px var(--accent-color);
+  background: #08f7fe;
+  color: #0a0a0f;
+  box-shadow: 0 0 10px #08f7fe;
 }
 
-/* =====================
-   SECTIONS
-===================== */
+/* === Sections === */
 section {
-  padding: 3rem 1rem;
-  max-width: 950px;
-  margin: auto;
-  background-color: var(--section-bg);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(8, 247, 254, 0.2);
   border-radius: 12px;
-  margin-bottom: 2rem;
-  box-shadow: 0 0 12px rgba(0,245,212,0.15);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px rgba(8, 247, 254, 0.1);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
 }
 
-/* alternate subtle glow */
-section:nth-child(even) {
-  border: 1px solid rgba(0, 245, 212, 0.25);
+section:nth-of-type(1) { animation-delay: 0.2s; }
+section:nth-of-type(2) { animation-delay: 0.4s; }
+section:nth-of-type(3) { animation-delay: 0.6s; }
+section:nth-of-type(4) { animation-delay: 0.8s; }
+section:nth-of-type(5) { animation-delay: 1.0s; }
+section:nth-of-type(6) { animation-delay: 1.2s; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* =====================
-   LINKS & BUTTONS
-===================== */
-a,
-a:visited,
-a:active {
-  color: var(--accent-color);
-  text-decoration: none;
-  text-shadow: 0 0 6px rgba(0,245,212,0.6);
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  color: #fff;
-  text-shadow: 0 0 12px var(--accent-color);
-}
-
-button {
-  font-family: 'IBM Plex Mono', monospace;
-  background: transparent;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background: var(--accent-color);
-  color: #000;
-  box-shadow: 0 0 12px var(--accent-color);
-}
-
-/* =====================
-   ABOUT SECTION
-===================== */
+/* === About Section === */
 .about-container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .profile-photo {
   width: 180px;
   height: 180px;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 0 15px rgba(0,245,212,0.3);
+  border-radius: 50%;
+  border: 3px solid #08f7fe;
+  box-shadow: 0 0 15px #08f7fe, 0 0 30px #08f7fe;
+  transition: transform 0.3s;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05) rotate(2deg);
 }
 
 .about-text {
   flex: 1;
-  min-width: 250px;
 }
 
-/* =====================
-   CARDS (for Experience, Skills, etc.)
-===================== */
-.card {
-  background: #0f172a;
-  border: 1px solid rgba(0,245,212,0.2);
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 0 12px rgba(0,245,212,0.15);
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* === Lists === */
+ul {
+  padding-left: 1.2rem;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(0,245,212,0.35);
+li {
+  margin-bottom: 0.8rem;
 }
 
-/* =====================
-   FOOTER
-===================== */
+/* === Blog Links === */
+#blogs ul li a {
+  font-weight: 600;
+}
+
+#blogs ul li a:hover {
+  color: #ff6ec7;
+  text-shadow: 0 0 5px #ff6ec7;
+}
+
+/* === Contact Section === */
+.contact-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-icons li {
+  list-style: none;
+}
+
+.contact-icons a {
+  font-weight: 600;
+  border: 1px solid #08f7fe;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.contact-icons a:hover {
+  background: #08f7fe;
+  color: #0a0a0f;
+  box-shadow: 0 0 10px #08f7fe;
+}
+
+/* === Footer === */
 footer {
   text-align: center;
-  background-color: #0a0f1f;
-  color: #94a3b8;
   padding: 1rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(0,245,212,0.3);
+  border-top: 1px solid rgba(8, 247, 254, 0.3);
+  opacity: 0.7;
 }
